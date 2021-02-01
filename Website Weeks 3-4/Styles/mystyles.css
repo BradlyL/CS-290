@@ -1,0 +1,55 @@
+body {
+    color: yellow;
+    background-color: grey;
+}
+
+p {
+    font-size: 20px;
+    margin: 25px 25px 25px 25px;
+    background-color: grey;
+    border: 2px solid green;
+}
+
+img {
+    float: right;
+
+}
+
+h1 {
+    font-size: 75px;
+    color:black;
+
+}
+
+h2 {
+    color: yellow;
+
+}
+
+div.center {
+    text-align: center;
+}
+
+/* The position of objects with this class will stay static, as in they will be where they appear be in the page layout. */
+.div1 {
+    padding: 50px 50px 50px 50px;
+    overflow: hidden;
+    clear: left;
+    position: static;
+}
+
+.about {
+    background-image: url(../Images/Arcade.jpg);
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+.clearfix {
+    overflow: auto;
+
+}
+
+#underlineify {
+    text-decoration: underline;
+    color:black;
+}
