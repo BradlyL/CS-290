@@ -1,0 +1,50 @@
+p {
+    color: black; font-size: 20px;
+    margin: 25px 25px 25px 25px;
+    background-color: grey;
+}
+
+p.fontfam {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.shorthandFont {
+    font: italic small-caps bold 20px/100px Georgia, serif
+}
+
+p.borderstyle {
+    border: 2px dotted gray;
+}
+
+td, table {
+    border:1px solid black;
+}
+
+.boldify {
+    font-weight: bold;
+    color: black;
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+#underlineify {
+    text-decoration: underline;
+}
+
+a[target=_blank] {
+    background-color: gray;
+}
+
+div.center {
+    text-align: center;
+}
+
+div {
+    padding: 25px 25px 25px 25px;
+}
+
+.about {
+    background-image: url(../Images/microphone.jpg);
+    opacity: 0.25;
+    background-repeat: no-repeat;
+}
