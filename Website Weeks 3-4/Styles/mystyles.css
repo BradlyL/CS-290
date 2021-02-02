@@ -37,6 +37,14 @@ div.center {
     text-align: center;
 }
 
+div.left {
+    text-align: left;
+}
+
+div.right {
+    text-align: right;
+}
+
 /* The position of objects with this class will stay static, as in they will be where they appear be in the page layout. */
 .div1 {
     padding: 50px 50px 50px 50px;
