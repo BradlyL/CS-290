@@ -75,4 +75,33 @@ div.right {
     body {
       background-color: white;
     }
-  }
+}
+
+.topnav {
+    border: 5px solid black;
+    padding: 15px 15px 15px 15px;
+}
+
+
+/* Note for myself: Definitely hard to implement, going to need to review this a bit more! */
+/*Display is so that it doesn't display menu without being hovered. Z-index so that it stays above everything else.*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
