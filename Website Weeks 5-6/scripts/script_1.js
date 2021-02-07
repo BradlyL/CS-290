@@ -1,3 +1,4 @@
+//Input checks to see if password matches designated password. Changes output text accordingly
 function password_input() {
     var submit_value;  // Kept trying to run this variable outside of function and I realized why that didn't make sense..
     var text;
@@ -6,13 +7,14 @@ function password_input() {
     submit_value = document.getElementById("code").value;
    
     if (submit_value == password_1) {
-        text = "Correct.";
+        text = "Correct."
         window.location.href = './Subpages/Subpage_1.html';
     } else {
         text = "Incorrect.";
     }
 
     document.getElementById("password_reveal").innerHTML = text;
+    console.log("Password_input function is working.");
 }
 
 function repeat_func() {
@@ -22,6 +24,7 @@ function repeat_func() {
     submit_value = document.getElementById("num_repeat").value;
 
     document.getElementById("code").innerHTML = text.repeat(submit_value);
+    console.log("Repeat_func function is working.");
 }
 
 function password_hint() {
@@ -31,4 +34,5 @@ function password_hint() {
     submit_value -= 1;
 
     document.getElementById("pass_hint").innerHTML = codes[submit_value];
+    console.log("Password_hint function is working.");
 }
