@@ -5,7 +5,7 @@ function password_input() {
     var password_1 = "password";
 
     submit_value = document.getElementById("code").value;
-   
+    
     if (submit_value == password_1) {
         text = "Correct."
         window.location.href = './Subpages/Subpage_1.html';
