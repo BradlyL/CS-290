@@ -3,34 +3,35 @@ import cgi, cgitb #importing cgi module, upon some reading cgitb does some detai
 
 form = cgi.FieldStorage() #Stores value
 password_input = form.getvalue("password_input", "Empty Form") #Grabs value from form
+
 print ("Content-type:text/html")
 print ("<html>") 
 print ("<head>") 
 print ("<title>Bradly Landucci</title>") 
 
-print ("""
-<script>
-function pass_input() {
-    var submit_value;  // Kept trying to run this variable outside of function and I realized why that didn't make sense..
-    var text;
-    var password_1 = "password";
-
-    submit_value = document.getElementById("code").value;
-   
-    if (submit_value == password_1) {
-        text = "Correct."
-        window.location.href = './Subpages/Subpage_1.html';
-    } else {
-        text = "Incorrect.";
-    }
-
-    document.getElementById("password_reveal").innerHTML = text;
-    console.log("Password_input function is working.");
-}
-</script>""")
+#Why do javascript functions not work in this???
+#print ("""
+#<script>
+#function pass_input() {
+#    var submit_value;  // Kept trying to run this variable outside of function and I realized why that didn't make sense..
+#    var text;
+#    var password_1 = "password";
+#
+#    submit_value = document.getElementById("code").value;
+#   
+#    if (submit_value == password_1) {
+#        text = "Correct."
+#        window.location.href = './Subpages/Subpage_1.html';
+#    } else {
+#        text = "Incorrect.";
+#    }
+#
+#    document.getElementById("password_reveal").innerHTML = text;
+#    console.log("Password_input function is working.");
+#}
+#</script>""")
 
 print ("</head>") 
-
 print ("<body>") 
 
 #Form #1 Recursively calls file and changes text on screen.
@@ -42,17 +43,12 @@ print ("""
 </p>
 </form> """)
 
+
+#Prints input
 print("<h1>%s</h1>" % (password_input))
 
-#Form #2 Password enterer
-print ("""
-<p>
-       Replaces previous message below: 
-       <input type ="code"> 
-       <button type="button" onclick="pass_input()">Submit</button>
-</p>
-""")
+#Takes you to next page.
+print("""<a href = "http://localhost:8000/cgi-bin/cgi_script_2.py?first=Bradly&last=Landucci">Link to next page</a>""")
 
-#Prints h1 input, Kind of weird that it is saving my previous inputs even after I restart the web server. Not sure how to reset this.
 print ("</body>")
 print ("</html>")
