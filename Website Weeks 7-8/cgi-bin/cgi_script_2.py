@@ -7,8 +7,10 @@ first = form.getvalue('first') #Grabs value from URL.
 last = form.getvalue('last')   #Grabs value from URL.
 
 print ("Content-type:text/html")
+
 print ("<html>") 
 print ("<head>") 
+
 print ("<title>Bradly Landucci</title>") 
 
 print ("</head>") 
