@@ -1,0 +1,11 @@
+#div1 {
+    position: absolute;
+}
+
+
+/* Had an idea to use this but on hold, kind of handy using bottom/left to reposition something that was in a weird spot.*/
+#bottom {
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+}
