@@ -20,19 +20,16 @@
 
 <div class="center">
     <form action = "login.php" method= "post">
-
         <p>Username</p>
         <input name = "username">
-
         <br>
         <br>
-
         <p>Password</p>
         <input name = "password">
 
         <button type="submit">Login</button>
 
-        <p id ="pass_fail"></p>
+        <p>Incorrect password, try again.</p>
     </form>
 </div>
 
