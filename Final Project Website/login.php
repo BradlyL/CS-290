@@ -53,10 +53,32 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
                 //Sure there is an easier way to display this, but this made immediate sense to me.
 
 
-                ?> <div class="center">Logged in.
+                ?> 
+                <div class="loginform">
+                    
+                    <div class="center">
+                    <p>Logged in.</p>
                     <form action="index.php">
-                    <input type="submit" value="Log out" />
+                        <input type="submit" value="Log out" />
                     </form>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class = "center">
+                        <input id ="x">
+                        <input id ="y">
+
+                        <br>
+
+                        <button type="submit" onclick="simple_add()">Add</button>
+                    </div>
+
+                    <div class = "center">
+                        <p id="password_reveal"></p>
+                    </div>
+
                 </div>
 
                 <?php

@@ -18,7 +18,7 @@
 
 <body>
 
-<div class="center">
+<div class="loginform center">
     <form action = "login.php" method= "post">
 
         <p>Username</p>

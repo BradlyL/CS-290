@@ -1,10 +1,20 @@
 body {
-    background-color: darkcyan;
+    background-image:linear-gradient(to left,darkcyan, grey);
+    padding-top: 40vh;
 }
 
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    
+}
+
+.loginform {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    height: 100px;
+    width: 400px;
+    margin: auto;   
 }
